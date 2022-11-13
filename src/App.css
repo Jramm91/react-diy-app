@@ -13,11 +13,11 @@
       rgba(100, 115, 255, 1) 100%
     );
   }
-  .todo-app {
+  .project-app {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    width: 520px;
+    justify-content: flex-start;
+    width: 100rem;
     min-height: 600px;
     background: #161a2b;
     text-align: center;
@@ -37,11 +37,11 @@
     opacity: 0.4;
   }
   
-  .todo-form {
+  .project-form {
     margin-bottom: 32px;
   }
   
-  .todo-input {
+  .project-input {
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
     border: 2px solid #5d0cff;
@@ -51,11 +51,11 @@
     color: #fff;
   }
   
-  .todo-input::placeholder {
+  .project-input::placeholder {
     color: #e2e2e2;
   }
   
-  .todo-button {
+  .project-button {
     padding: 16px;
     border: none;
     border-radius: 0 4px 4px 0;
@@ -70,11 +70,11 @@
     text-transform: capitalize;
   }
   
-  .todo-input.edit {
+  .project-input.edit {
     border: 2px solid #149fff;
   }
   
-  .todo-button.edit {
+  .project-button.edit {
     background: linear-gradient(
       90deg,
       rgba(20, 159, 255, 1) 0%,
@@ -83,13 +83,34 @@
     padding: 16px 22px;
   }
   
-  .todo-container {
+  .project-container {
     display: flex;
     flex-direction: row;
     position: relative;
   }
+
+  .project-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .project-date-picker {
+    color-scheme: dark;
+    margin:3px 3px;
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #5d0cff;
+    outline: none;
+    width: 150px;
+    background: transparent;
+    color: #fff;
+  }
+
+  .project-date-picker.edit {
+    border: 2px solid #149fff;
+  }
   
-  .todo-row {
+  .project-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,7 +127,7 @@
     width: 90%;
   }
   
-  .todo-row:nth-child(4n + 1) {
+  .project-row:nth-child(4n + 1) {
     background: linear-gradient(
       90deg,
       rgba(93, 12, 255, 1) 0%,
@@ -114,7 +135,7 @@
     );
   }
   
-  .todo-row:nth-child(4n + 2) {
+  .project-row:nth-child(4n + 2) {
     background: linear-gradient(
       90deg,
       rgba(255, 12, 241, 1) 0%,
@@ -122,7 +143,7 @@
     );
   }
   
-  .todo-row:nth-child(4n + 3) {
+  .project-row:nth-child(4n + 3) {
     background: linear-gradient(
       90deg,
       rgba(20, 159, 255, 1) 0%,
@@ -130,6 +151,13 @@
     );
   }
   
+  .project-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30rem;
+  }
+
   .icons {
     display: flex;
     align-items: center;
